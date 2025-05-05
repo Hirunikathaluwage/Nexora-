@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.financetracker">
+
+    <!-- Required for notifications on Android 13+ -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinanceTracker"
+        tools:targetApi="31">
+
+        <!-- Launcher Splash Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Core Screens -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".AddTransactionActivity"
+            android:exported="true" />
+        <activity android:name=".TransactionHistoryActivity" />
+        <activity android:name=".TransactionSummaryActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <!-- Optional / Reserved Screens -->
+        <activity android:name=".CategoryTransactionActivity" />
+        <activity
+            android:name=".bg_profile_gradient"
+            android:exported="false" />
+    </application>
+
+</manifest>
