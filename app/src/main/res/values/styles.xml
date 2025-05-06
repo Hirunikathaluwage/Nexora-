@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Custom Light Theme -->
+    <style name="Theme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <!-- ChipButton Style -->
+    <style name="ChipButton">
+        <item name="android:backgroundTint">#1C1C23</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <!-- Spinner Dark Theme -->
+    <style name="SpinnerDarkTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+</resources>
